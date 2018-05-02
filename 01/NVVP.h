@@ -7,6 +7,7 @@ class NVVP::NhanVien
 private:
 	int iSoNgayLamViec;
 public:
-	
+	void Xuat();
+	void Nhap();
 
 };

@@ -14,7 +14,6 @@ void Xuat(NhanVien& NV)
 {
 	cout << "Ho va ten: " << NV.HoTen << endl;
 	cout << "Ngay sinh: " << NV.iDay << "/" << NV.iMonth << "/" << NV.iYear << endl;
-	cout << "Tong Luong: " << NV.Luong;
 }
 istream& operator>>(istream& is,NhanVien& NV)
 {
