@@ -1,13 +1,16 @@
+#ifndef NVSX_H
+#define NVSX_H
 #include <iostream>
-#incude "NhanVien.h"
+#include "NhanVien.h"
 using namespace std;
 class NVSX:NhanVien
 {
-private:
-	int iSoSanPham;
-	int iLuongCanBan;
+	long iLuongCB;
+	int iSoSP;
 public:
+	static long TongLuong;
 	void Nhap();
 	void Xuat();
 	float TinhLuong();
 };
+#endif // NVSX_H

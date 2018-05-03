@@ -3,25 +3,38 @@
 #include "MyDate.h"
 using namespace std;
 
-void Nhap(NhanVien &NV)
+void NhapNgay(MyDate &date)
+{
+	cout << "Nhap ngay: ";
+	cin >> date.iDay;
+	cout << "Nhap thang: ";
+	cin >> date.iMonth;
+	cout << "Nhap nam: ";
+	cin>> date.iYear;
+}
+void XuatNgay(MyDate date)
+{
+	cout << date.iDay << "/" << date.iMonth << "/" << date.iYear << endl;
+}
+void NhanVien::Nhap()
 {
 	cout << "Nhap ho va ten\n: ";
-	cin >> NV.HoTen;
+	cin >> HoTen;
 	cout << "Nhap ngay thang nam sinh: \n";
-	cin >> NV.iDay >> NV.iMonth >> NV.iYear;
+	NhapNgay(NgaySinh);
 }
-void Xuat(NhanVien& NV)
+void NhanVien::Xuat()
 {
-	cout << "Ho va ten: " << NV.HoTen << endl;
-	cout << "Ngay sinh: " << NV.iDay << "/" << NV.iMonth << "/" << NV.iYear << endl;
+	cout << "Ho va ten: " << HoTen << endl;
+    XuatNgay(NgaySinh);
 }
 istream& operator>>(istream& is,NhanVien& NV)
 {
-	Nhap(NV);
+	NV.Nhap();
 	return is;
 }
 ostream& operator<<(ostream& os,NhanVien& NV)
 {
-	Xuat(NV);
+	NV.Xuat();
 	return os;
 }

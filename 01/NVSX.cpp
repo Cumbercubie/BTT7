@@ -1,4 +1,4 @@
-#include <iosream>
+#include <iostream>
 #include "NVSX.h"
 #include "NhanVien.h"
 using namespace std;
@@ -7,9 +7,9 @@ void NVSX::Nhap()
 {
 	NhanVien::Nhap();
 	cout << "Nhap so san pham ";
-	cin >> iSoSanPham;
+	cin >> iSoSP;
 	cout << "Nhap luong can ban ";
-	cin >> iLuongCanBan;
+	cin >> iLuongCB;
 
 }
 
@@ -21,5 +21,5 @@ void NVSX::Xuat()
 
 float NVSX::TinhLuong()
 {
-	return iLuongCanBan+iSoSanPham*1.0*5000;
+	return iLuongCB + iSoSP*5000;
 }
