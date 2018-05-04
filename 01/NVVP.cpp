@@ -4,12 +4,14 @@ using namespace std;
 
 void NVVP::Nhap()
 {
+    NhanVien::Nhap();
 	cout << "Nhap so ngay lam viec\n";
 	cin >> iSoNgayLV;
 }
 void NVVP::Xuat()
 {
 	NhanVien::Xuat();
+	Luong = this->TinhLuong();
 	cout << "Tong Luong: " << Luong;
 }
 istream& operator>>(istream& is,NVVP& NV)

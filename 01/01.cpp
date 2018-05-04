@@ -1,14 +1,17 @@
 #include <iostream>
-#include "NhanVien.h"
-#include "NVVP.h"
+#include "nhanvien.h"
 #include "NVSX.h"
+#include "NVVP.h"
+#include "cstdlib"
 using namespace std;
 
 int main()
 {
-	int m,n;
-	NVVP *pVP = new NVVP[n];
-	NVSX *pSX = new NVSX[m];
-	NhanVien *pNVVP = &pVP;
-	NhanVien *pNVSX = &pSX;
+    NhanVien *nv1 = new NVSX;
+    nv1->Nhap();
+    nv1->TinhLuong();
+    nv1->Xuat();
+    system("pause");
+    return 0;
+
 }

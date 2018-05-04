@@ -8,10 +8,12 @@ class NhanVien
     string HoTen;
     MyDate NgaySinh;
 	protected:
-		long  Luong;
+		float  Luong;
 	public:
-		void Nhap();
-        void Xuat();
+	    NhanVien();
+	    ~NhanVien();
+		virtual void Nhap();
+        virtual void Xuat();
 		virtual float TinhLuong();
 };
 #endif // NVVP_H

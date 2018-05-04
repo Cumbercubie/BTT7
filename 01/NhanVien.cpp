@@ -2,7 +2,6 @@
 #include "NhanVien.h"
 #include "MyDate.h"
 using namespace std;
-
 void NhapNgay(MyDate &date)
 {
 	cout << "Nhap ngay: ";
@@ -18,8 +17,8 @@ void XuatNgay(MyDate date)
 }
 void NhanVien::Nhap()
 {
-	cout << "Nhap ho va ten\n: ";
-	cin >> HoTen;
+	cout << "Nhap ho va ten: \n";
+	getline(cin,HoTen);
 	cout << "Nhap ngay thang nam sinh: \n";
 	NhapNgay(NgaySinh);
 }
@@ -37,4 +36,8 @@ ostream& operator<<(ostream& os,NhanVien& NV)
 {
 	NV.Xuat();
 	return os;
+}
+float NhanVien::TinhLuong()
+{
+
 }

@@ -3,12 +3,11 @@
 #include <iostream>
 #include "NhanVien.h"
 using namespace std;
-class NVSX:NhanVien
+class NVSX:public NhanVien
 {
 	long iLuongCB;
 	int iSoSP;
 public:
-	static long TongLuong;
 	void Nhap();
 	void Xuat();
 	float TinhLuong();

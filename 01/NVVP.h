@@ -3,7 +3,7 @@
 #include <iostream>
 #include "NhanVien.h"
 using namespace std;
-class NVVP:NhanVien
+class NVVP:public NhanVien
 {
     int iSoNgayLV;
 public:

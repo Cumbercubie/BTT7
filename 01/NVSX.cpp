@@ -1,8 +1,15 @@
 #include <iostream>
+#include "nhanvien.h"
 #include "NVSX.h"
-#include "NhanVien.h"
 using namespace std;
-
+NhanVien::NhanVien()
+{
+    Luong=0;
+}
+NhanVien::~NhanVien()
+{
+    delete this;
+}
 void NVSX::Nhap()
 {
 	NhanVien::Nhap();
@@ -16,7 +23,8 @@ void NVSX::Nhap()
 void NVSX::Xuat()
 {
 	NhanVien::Xuat();
-	cout << "Tong luong la";
+	Luong = this->TinhLuong();
+	cout << "Tong luong la: " << Luong;
 }
 
 float NVSX::TinhLuong()

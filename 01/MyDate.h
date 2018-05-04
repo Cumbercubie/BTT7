@@ -7,6 +7,10 @@ struct MyDate
 	int iDay;
 	int iMonth;
 	int iYear;
+public:
+    MyDate();
+    ~MyDate();
 };
+
 
 #endif // MYDATE_H
