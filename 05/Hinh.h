@@ -1,12 +1,13 @@
+#ifndef HINH_H
+#define HINH_H
 class Hinh
 {
 
 protected:
-	//float fChuVi, fDienTich, 
 	float fDai, fRong;
 public:
 	virtual void Nhap();
 	virtual void VeHinh();
-	//virtual float TinhChuVi();
-	//virtual float TinhDienTich();
 };
+
+#endif // HINH_H

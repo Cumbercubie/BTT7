@@ -2,20 +2,15 @@
 #include "Hinh.h"
 using namespace std;
 
-void Nhap()
+void Hinh::Nhap()
 {
-	int shape;
-	cout << "Nhap hinh muon ve: " << endl;
-	cout << "1.Hinh thang" << endl;
-	cout << "2.Hinh binh hanh" << endl;
-	cout << "3.Hinh chu nhat" << endl;
-	cout << "4.Hinh vuong" << endl;
-	cin >> shape;
-	switch(shape)
-	{
-		case 1:
-		  cout << "Nhap day lon: ";
-		  cin >>
-	}
+	cout << "Nhap chieu dai: \n";
+	cin >> fDai;
+	cout << "\nNhap chieu rong/cao: \n";
+	cin >> fRong;
+}
+void Hinh::VeHinh()
+{
+	//blablablabla
 
 }
